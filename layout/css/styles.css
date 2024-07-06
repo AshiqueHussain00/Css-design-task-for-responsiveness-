@@ -101,7 +101,7 @@ margin-left: 9rem;
 #third-text{
     margin-top: 2rem;
 }
-@media (max-width: 375px){
+@media screen and (max-width: 375px){
     .container-1 {
         display: block;
        margin: 2rem;
@@ -134,14 +134,6 @@ margin-left: 9rem;
         width: 18rem;
         height: 3.4rem;
       }
-      .rating .stars {
-        color: #f6b54a;
-        margin-right: 2rem;
-      }
-      .rating .text {
-        font-size: 16px;
-        color: #4b3a7f;
-      }
       #second {
       margin-left: 0;
       }
@@ -153,7 +145,7 @@ margin-left: 9rem;
         gap: 2.5rem;
         justify-content: center;
         margin-left: 1rem;
-        max-width: 375px;
+     
       }
       .messages {
         background-color: hsl(300, 43%, 22%);
@@ -167,28 +159,5 @@ margin-left: 9rem;
         align-items: center;
         line-height: 1.1;
       }
-      .user-name {
-        display: flex;
-        gap: 1.2rem;
-        margin-bottom: 20px;
-      }
-      .messages img {
-        height: 40px;
-        border-radius: 50%;
-      }
-      #verified {
-        color: hsl(303, 10%, 53%);
-      }
-      .text-container {
-        text-align: justify;
-      }
-      #first-text{
-          margin-top: 0;
-      }
-      #second-text{
-          margin-top: 1rem;
-      }
-      #third-text{
-          margin-top: 2rem;
-      }
+   
 }
