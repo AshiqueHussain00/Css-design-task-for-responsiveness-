@@ -9,15 +9,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400, 500, 700;
   font-style: normal;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 .container-1 {
   display: flex;
- margin: 6rem;
- 
+  margin: 6rem;
 }
 .productivity-container {
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 .productivity-container h1 {
   font-size: 3.5rem;
@@ -29,13 +28,12 @@ body {
   text-align: justify;
 }
 .rating-container {
- margin-top: 2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 .rating {
-    
   display: flex;
   align-items: center;
   background-color: rgb(248, 243, 253);
@@ -52,13 +50,12 @@ body {
 .rating .text {
   font-size: 16px;
   color: #4b3a7f;
-  
 }
 #second {
-margin-left: 4rem;
+  margin-left: 4rem;
 }
 #third {
-margin-left: 9rem;
+  margin-left: 9rem;
 }
 .container-2 {
   display: flex;
@@ -92,72 +89,224 @@ margin-left: 9rem;
 .text-container {
   text-align: justify;
 }
-#first-text{
-    margin-top: 0;
+#first-text {
+  margin-top: 0;
 }
-#second-text{
+#second-text {
+  margin-top: 1rem;
+}
+#third-text {
+  margin-top: 2rem;
+}
+@media (max-width: 375px) {
+  .container-1 {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+  }
+  .productivity-container {
+    margin-left: 0;
+  }
+  .productivity-container h1 {
+    font-size: 2.3rem;
+  }
+  .productivity-container p {
+    line-height: 1;
     margin-top: 1rem;
-}
-#third-text{
+    padding-right: 0;
+    text-align: justify;
+  }
+  .rating-container {
     margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rating {
+    display: block;
+    align-items: center;
+    background-color: rgb(248, 243, 253);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: fit-content;
+    width: 18rem;
+    height: 3.4rem;
+  }
+  #second {
+    margin-left: 0;
+  }
+  #third {
+    margin-left: 0;
+  }
+  .container-2 {
+    display: block;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  .messages {
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    width: fit-content;
+    height: 13rem;
+    width: 21rem;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px;
+    align-items: center;
+    line-height: 1.1;
+  }
+  #first-text {
+    margin-top: 1rem;
+  }
+  #second-text {
+    margin-top: 1rem;
+  }
+  #third-text {
+    margin-top: 1rem;
+  }
 }
-@media screen and (max-width: 375px){
-    .container-1 {
-        display: block;
-       margin: 2rem;
-       text-align: center;
-      }
-      .productivity-container {
-          margin-left: 0;
-      }
-      .productivity-container h1 {
-        font-size: 2.3rem;
-      }
-      .productivity-container p {
-        line-height: 1;
-        margin-top: 1rem;
-        padding-right: 0;
-        text-align: justify;
-      }
-      .rating-container {
-       margin-top: 2rem;
-        flex-direction: column;
-        gap: 1rem;
-      }
-      .rating {
-        display: block;
-        align-items: center;
-        background-color: rgb(248, 243, 253);
-        border-radius: 8px;
-        padding: 10px 15px;
-        width: fit-content;
-        width: 18rem;
-        height: 3.4rem;
-      }
-      #second {
-      margin-left: 0;
-      }
-      #third {
-      margin-left: 0;
-      }
-      .container-2 {
-        display: block;
-        gap: 2.5rem;
-        justify-content: center;
-        margin-left: 1rem;
-     
-      }
-      .messages {
-        background-color: hsl(300, 43%, 22%);
-        color: #fff;
-        width: fit-content;
-        height: 13rem;
-        width: 21rem;
-        padding: 30px;
-        border-radius: 8px;
-        border: 1px;
-        align-items: center;
-        line-height: 1.1;
-      }
-   
+@media (min-width:375px) and (max-width: 600px){
+  .container-1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+    margin: 1rem;
+  }
+  .productivity-container {
+    margin-left: 0;
+  }
+  .productivity-container h1 {
+    font-size: 2.3rem;
+  }
+  .productivity-container p {
+    line-height: 1;
+    margin-top: 1rem;
+    padding-right: 0;
+    align-items: center;
+    text-align: justify;
+  }
+  .rating-container {
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rating {
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 243, 253);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: fit-content;
+    width: 21.5rem;
+    height: 3.4rem;
+  }
+  #second {
+    margin-left: 0;
+  }
+  #third {
+    margin-left: 0;
+  }
+  .container-2 {
+    align-items: center;
+   flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  .messages {
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    width: fit-content;
+    height: 13rem;
+    width: 21rem;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px;
+    align-items: center;
+    line-height: 1.1;
+  }
+  #first-text {
+    margin-top: 1rem;
+  }
+  #second-text {
+    margin-top: 1rem;
+  }
+  #third-text {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px){
+  .container-1 {
+    display: block;
+    margin: 0;
+    text-align: center;
+    margin: 1rem;
+  }
+  .productivity-container {
+    margin-left: 0;
+  }
+  .productivity-container h1 {
+    font-size: 2.3rem;
+  }
+  .productivity-container p {
+    line-height: 1;
+    margin-top: 1rem;
+    padding-right: 0;
+    text-align: center;
+    /* text-align: justify; */
+  }
+  .rating-container {
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .rating {
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 243, 253);
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: fit-content;
+    width: 21.5rem;
+    height: 3.4rem;
+  }
+  #second {
+    margin-left: 0;
+  }
+  #third {
+    margin-left: 0;
+  }
+  .container-2 {
+    align-items: center;
+   flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-left: 2rem;
+  }
+  .messages {
+    background-color: hsl(300, 43%, 22%);
+    color: #fff;
+    width: fit-content;
+    height: 13rem;
+    width: 21rem;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px;
+    align-items: center;
+    line-height: 1.1;
+  }
+  #first-text {
+    margin-top: 1rem;
+  }
+  #second-text {
+    margin-top: 1rem;
+  }
+  #third-text {
+    margin-top: 1rem;
+  }
 }
